@@ -48,7 +48,7 @@ public class Calculator extends JFrame {
       private JButton btnSubtract = new JButton("Subtract");
       private JButton btnMultiply = new JButton("Multiply");
       private JButton btnDivide = new JButton("Divide");
-      private ButtonListener listener = new ButtonListener(); // Just one listener
+      private ButtonListener listener = new ButtonListener();
 
       private ButtonPane() {
          btnAdd.addActionListener(listener);
@@ -68,7 +68,7 @@ public class Calculator extends JFrame {
             parseOperators();
 
             if (e.getSource() == btnAdd) {
-               Calculator.this.add(); // Have to differentiate from Component.add()
+               Calculator.this.add();
             } else if (e.getSource() == btnSubtract) {
                subtract();
             } else if (e.getSource() == btnMultiply) {
